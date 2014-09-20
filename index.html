@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<!-----------------------------------------------------------------------------------------------> 
+<!---------------------------------  HTML Head -------------------------------------------------->
+<!-----------------------------------------------------------------------------------------------> 	
+   <head>
+      <title> Sentinel Campus Solutions </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+   </head>
+   
+   <body>
+<!-----------------------------------------------------------------------------------------------> 
+<!------------------------  Navbar In The Top! -------------------------------------------------->
+<!-----------------------------------------------------------------------------------------------> 
+      <!-- Apparently, this is needed for the bar on the top. -->
+      <div class= "navbar navbar-default navbar-static-top">
+      	<div class="container">
+      		<div>
+      			<!-- This Creates the title on the top left corner. -->
+      			<a href="http://google.com" class="navbar-brand" style="color:green"> Sentinel </a>
+      			
+      			<!-- This seems to just work when you resize the screen
+      				(compatible for mobile website mode.) -->
+      			<button class="navbar-toggle" data-toggle = "collapse" data-target= ".navHeaderCollapse">
+      				<!-- These represent the lines in the button when 
+      					you move to mobile mode. -->
+      				<span class="icon-bar"></span>
+      				<span class="icon-bar"></span>
+      				<span class="icon-bar"></span>
+      			</button>
+      			
+      			<div class="collapse navbar-collapse navHeaderCollapse">
+      				<ul class = "nav navbar-nav navbar-right">
+      					<li> <a href="index.html"> Home </a> </li>
+      					<li> <a href="signUp.html"> Sign Up </a></li>
+      					<li> <a href="signIn.html"> Sign In </a></li>
+      					<li> <a href="incidents.html"> Incidents </a></li>
+      					<li> <a href="campusMap.html"> Campus Map </a></li>
+      					<li> <a href="myAccount.html"> My Account </a></li>
+
+      					<!-- <li> <a href="#emergency" data-toggle = "modal"> Incidents </a></li> -->
+      					<!-- <li> <a href="incidents.html" data-toggle = "modal"> Incidents </a></li> -->
+      					
+      					<li class = "dropdown"> 
+      						<a href="#" class = "dropdown-toggle" data-toggle = "dropdown"> 
+      							Contact Us <b class= "caret"> </b>
+							</a> 
+							<ul class="dropdown-menu">
+								<li><a href="#"> Guardia Universitaria </a></li>
+								<li><a href="#"> Policia de Puerto Rico</a></li>
+							</ul>
+      					</li>
+      					
+       				</ul>
+      			</div>
+      			
+      		</div>
+      	</div>
+      </div>
+<!-----------------------------------------------------------------------------------------------> 
+<!------------------------  Jumbotron In The Middle --------------------------------------------->
+<!----------------------------------------------------------------------------------------------->
+      <!-- Big Jumbotron thing in the middle of the website.-->
+      <div class ="container">
+      	<div class = "jumbotron text-center">
+      		<!-- <h1 style="font-family:Verdana; color:green">Sentinel</h1> -->
+      		<img class = "featureImg" src="img/logo.png" width="100%">
+      		<p style="font-family:Verdana; color: green">A Campus Security Application</p>
+      		<a href = "#read.htm" class="btn btn-default"> Learn More </a>
+      		<a class="btn btn-default"> Your Safety </a>
+      		<!-- <a class="btn btn-default"> Previous Incidents </a> -->
+      	</div>
+      </div>
+<!-----------------------------------------------------------------------------------------------> 
+<!------------------------  Columns In The Middle --------------------------------------------->
+<!----------------------------------------------------------------------------------------------->     
+      <!-- This is for the columns in the middle of the website. -->
+      <div class="container">
+      	<div class="row">
+      		
+      		<div class="col-md-3 col-md-offset-2">
+      			<h3><a href="#"> Sentinel Security Solutions </a></h3>
+      			<p> Our Application provides a variety of features for the your safety. </p>
+      			<a href="#" class = "btn btn-default"> Read More </a>
+      		</div>
+      		
+      		<div class="col-md-3 col-md-offset-2">
+      			<h3><a href="#"> Available for UPRM </a></h3>
+      			<p> Will be released on other campuses in the near future. </p>
+      			<a href="#" class = "btn btn-default"> Read More </a>
+      		</div>
+      		
+      		<!-- <div class="col-md-3">
+      			<h3><a href="#"> This is our third column. </a></h3>
+      			<p> Stuff written here. </p>
+      			<a href="#" class = "btn btn-default"> Read More </a>
+      		</div>
+      		
+      		<div class="col-md-3">
+      			<h3><a href="#"> This is our fourth column. </a></h3>
+      			<p> Stuff written here. </p>
+      			<a href="#" class = "btn btn-default"> Read More </a>
+      		</div> -->
+      		
+		</div>
+	  </div>      
+<!----------------------------------------------------------------------------------------------->      
+<!------------------------ Footer At The Bottom  ------------------------------------------------>
+<!----------------------------------------------------------------------------------------------->     
+      <!-- To Write text embedded on the bottom of the website. -->
+      <div class="navbar navbar-default navbar-fixed-bottom">
+      	<div class="container">
+      		<!-- Some random text-->
+      		<p class="navbar-text pull-left"> Copyright Sentinel 2014 </p>
+      		<!-- A Button Linked to somewhere else. -->
+      		
+      		<a href="http://uprm.edu" class="navbar-text pull-right"> English </a>
+			<a href="http://uprm.edu" class="navbar-text pull-right"> Espanol </a>
+
+
+      		<a href="http://uprm.edu" class = "navbar-btn btn-success btn pull-right"> UPRM </a>
+      		<a href="http://facebook.com" class = "navbar-btn btn-info btn pull-right"> Facebook </a>
+      	</div> 
+      </div>
+<!----------------------------------------------------------------------------------------------->
+<!------------------------ Modal When Clicking "Emergencies" ------------------------------------>
+<!------------------------ References #emergency ------------------------------------------------>
+<!----------------------------------------------------------------------------------------------->     
+		<!--_MODALS ARE POPUP BOXES!_--> 
+ 	  <div class="modal fade" id = "emergency" role="dialog">
+ 	  	<div class="modal-dialog">
+ 	  		<div class="modal-content">
+ 	  			<form class="form-horizontal">
+	 	  			<div class="modal-header">
+	 	  				<h4> Contact Tech Site </h4>
+	 	  			</div>
+	 	  			<div class="modal-body">
+	
+						<div class="form-group">
+							
+							<label for = "contact-name" class="col-lg-2 control-label"> Name: </label>
+							<div class="col-lg-10">
+								
+								<input type="text" class="form-control" id="contact-name" placeholder="Full Name"/>
+									
+							</div>
+						</div>	
+						
+						<div class="form-group">
+							
+							<label for = "contact-email" class="col-lg-2 control-label"> E-Mail: </label>
+							<div class="col-lg-10">
+								
+								<input type="text" class="form-control" id="contact-email" placeholder="you@example.com"/>
+									
+							</div>
+						</div>	
+						
+						<div class="form-group">
+							
+							<label for = "contact-message" class="col-lg-2 control-label"> Message: </label>
+							<div class="col-lg-10">
+								
+								<textarea class="form-control" rows="8"></textarea>
+																	
+							</div>
+						</div>					
+	
+	 	  			</div>
+	 	  			<div class="modal-footer">
+	 	  				<a class="btn btn-danger" data-dismiss= "modal"> Close </a>
+	 	  				<button class="btn btn-primary" type="submit"> Send </button>
+	 	  			</div>
+ 	  			</form>
+ 	  		</div>
+ 	  	</div>
+ 	  </div>
+<!-----------------------------------------------------------------------------------------------> 
+<!--------------------jQuery and Bootstrap Imports (Ignore) ------------------------------------->
+<!----------------------------------------------------------------------------------------------->     
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files 
+            as needed -->
+      <script src="js/bootstrap.min.js"></script>
+   </body>
+   
+</html>

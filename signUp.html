@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<!-----------------------------------------------------------------------------------------------> 
+<!---------------------------------  HTML Head -------------------------------------------------->
+<!-----------------------------------------------------------------------------------------------> 	
+   <head>
+      <title> Sentinel Campus Solutions </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+   </head>
+   
+   <body>
+<!-----------------------------------------------------------------------------------------------> 
+<!------------------------  Navbar In The Top! -------------------------------------------------->
+<!-----------------------------------------------------------------------------------------------> 
+      <!-- Apparently, this is needed for the bar on the top. -->
+      <div class= "navbar navbar-default navbar-static-top">
+      	<div class="container">
+      		<div>
+      			<!-- This Creates the title on the top left corner. -->
+      			<a href="http://google.com" class="navbar-brand" style="color:green"> Sentinel </a>
+      			
+      			<!-- This seems to just work when you resize the screen
+      				(compatible for mobile website mode.) -->
+      			<button class="navbar-toggle" data-toggle = "collapse" data-target= ".navHeaderCollapse">
+      				<!-- These represent the lines in the button when 
+      					you move to mobile mode. -->
+      				<span class="icon-bar"></span>
+      				<span class="icon-bar"></span>
+      				<span class="icon-bar"></span>
+      			</button>
+      			
+      			<div class="collapse navbar-collapse navHeaderCollapse">
+      				<ul class = "nav navbar-nav navbar-right">
+      					<li> <a href="index.html"> Home </a> </li>
+      					<li> <a href="read.htm"> Sign Up </a></li>
+      					<li> <a href="read.htm"> Sign In </a></li>
+      					<li> <a href="incidents.html" data-toggle = "modal"> Incidents </a></li>
+      					<li> <a href="campusMap.html"> Campus Map </a></li>
+      					<li> <a href="myAccount.html"> My Account </a></li>
+
+      					<li class = "dropdown"> 
+      						<a href="#" class = "dropdown-toggle" data-toggle = "dropdown"> 
+      							Contact Us <b class= "caret"> </b>
+							</a> 
+							<ul class="dropdown-menu">
+								<li><a href="#"> Guardia Universitaria </a></li>
+								<li><a href="#"> Policia de Puerto Rico</a></li>
+							</ul>
+      					</li>
+      					
+       				</ul>
+      			</div>
+      			
+      		</div>
+      	</div>
+      </div>
+       
+<div class="container">      
+<form role="form">
+  <div class="form-group">
+    <label for="exampleInputEmail1">First Name</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="First Name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Last Name</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+  </div>
+  <div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    Male
+  </label>
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+    Female
+  </label>
+</div>
+
+	<div class="form-group">
+    <label for="exampleInputPassword1">Physical Adderss</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Home Address">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Phone Number</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="i.e. 787-777-8888">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">University</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="i.e. UPRM">
+  </div>
+  <div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    Student 
+  </label>
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+    Employee
+  </label>
+</div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Student Number</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ex. 802-01-0001">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Email Address</label>
+    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Must be an @upr.edu email.">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Password</label>
+    <input type="password" class="form-control" id="exampleInputEmail1" placeholder="Case Sentsitive">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Confirm Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+</div>
+      
+<!----------------------------------------------------------------------------------------------->      
+<!------------------------ Footer At The Bottom  ------------------------------------------------>
+<!----------------------------------------------------------------------------------------------->     
+      <!-- To Write text embedded on the bottom of the website. -->
+      <div class="navbar navbar-default navbar-fixed-bottom">
+      	<div class="container">
+      		<!-- Some random text-->
+      		<p class="navbar-text pull-left"> Copyright Sentinel 2014 </p>
+      		
+      		<a href="http://uprm.edu" class="navbar-text pull-right"> English </a>
+			<a href="http://uprm.edu" class="navbar-text pull-right"> Espanol </a>
+
+      		<!-- A Button Linked to somewhere else. -->
+      		<a href="http://uprm.edu" class = "navbar-btn btn-success btn pull-right"> UPRM </a>
+      		<a href="http://facebook.com" class = "navbar-btn btn-info btn pull-right"> Facebook </a>
+      	</div> 
+      </div>
+<!-----------------------------------------------------------------------------------------------> 
+<!--------------------jQuery and Bootstrap Imports (Ignore) ------------------------------------->
+<!----------------------------------------------------------------------------------------------->     
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files 
+            as needed -->
+      <script src="js/bootstrap.min.js"></script>
+   </body>
+   
+</html>
